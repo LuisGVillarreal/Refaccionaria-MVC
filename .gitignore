@@ -5,4 +5,3 @@ config/keys.php
 /vendor/
 composer.lock
 composer.json
-config/keys.php
