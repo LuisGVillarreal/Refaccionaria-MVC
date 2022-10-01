@@ -1,0 +1,8 @@
+#Llaves privadas
+config/keys.php
+
+#Librerias php
+/vendor/
+composer.lock
+composer.json
+config/keys.php
