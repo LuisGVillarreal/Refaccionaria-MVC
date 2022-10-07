@@ -5,3 +5,6 @@ config/keys.php
 /vendor/
 composer.lock
 composer.json
+
+#Carpeta imagen
+/uploads/
