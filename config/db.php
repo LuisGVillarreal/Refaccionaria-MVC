@@ -4,7 +4,7 @@
  */
 class Database {
 	public static function connect(){
-		$db =  new mysqli('https://databases-auth.000webhost.com', 'id20952305_root', 'abX&}HHXcIxWlK!5', 'id20952305_dbrefaccionaria_autos');
+		$db =  new mysqli('bu6diejoetrowjajgwkp-mysql.services.clever-cloud.com', 'uo8xuk4gadd3xdnv', 'XuOIKNZMOC7ezYAkPuBE', 'bu6diejoetrowjajgwkp');
 		$db->set_charset("utf8");
 		return $db;
 	}
