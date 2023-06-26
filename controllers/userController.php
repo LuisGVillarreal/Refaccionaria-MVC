@@ -145,7 +145,7 @@ class userController {
 						if (!is_dir('uploads/users')) {
 							mkdir('uploads/users',0777, true);
 						}
-						//$user->setImg($filename);
+						$user->setImg($filename);
 						move_uploaded_file($file['tmp_name'], 'uploads/users/'.$filename);
 					}
 				}
