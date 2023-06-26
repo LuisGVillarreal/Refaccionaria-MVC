@@ -34,6 +34,27 @@ class utils{
 		}
 	}
 
+	public static function isAdminOrOwner($userId){
+		if (isset($_SESSION['admin'])) {
+			return true;
+		}
+		
+		if(isset($_SESSION['identity'])){
+			require_once 'models/user.php';
+			$identityId = $_SESSION['identity']->id;
+			$user = new User();
+			$user->setId($userId);
+			$user = $user->getOne();
+			if ($user !== null && $user->id == $identityId) {
+				return true;
+			} else {
+				header('Location: '.base_url);
+			}
+		} else{
+			header('Location: '.base_url);
+		}
+	}
+
 	public static function showCategories(){
 		require_once 'models/category.php';
 		$category = new category();
@@ -92,5 +113,3 @@ class utils{
 		return $product->stock;
 	}
 }
-
-?>

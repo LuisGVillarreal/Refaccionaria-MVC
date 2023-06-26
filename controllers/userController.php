@@ -34,7 +34,7 @@ class userController {
 	}
 
 	public function edit(){
-		utils::isAdmin();
+		utils::isAdminOrOwner($_GET['id']);
 		$edit = true;
 		if(isset($_GET['id'])){
 			$id = $_GET['id'];	

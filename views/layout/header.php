@@ -62,11 +62,12 @@
 									<?php if(isset($_SESSION['admin'])):?>
 										<li><a class="dropdown-item" href="<?=base_url?>user/gestion">Gest. Usuarios</a></li>
 										<li><a class="dropdown-item" href="<?=base_url?>user/logs">Bitacora</a></li>
-										<li><a class="dropdown-item" href="<?=base_url?>Product/gestion">Gest. Productos</a></li>
+										<li><a class="dropdown-item" href="<?=base_url?>product/gestion">Gest. Productos</a></li>
 										<li><a class="dropdown-item" href="<?=base_url?>category/index">Gest. Categorias</a></li>
 										<li><a class="dropdown-item" href="<?=base_url?>order/gestion">Gest. Pedidos</a></li>
 										<?php else:?>
 											<li><a class="dropdown-item" href="<?=base_url?>order/myOrders">Mis Pedidos</a></li>
+											<li><a class="dropdown-item" href="<?=base_url?>user/edit&id=<?=$_SESSION['identity']->id?>">Editar perfil</a></li>
 										<?php endif;?>
 										<li><hr class="dropdown-divider"></li>
 										<li><a class="dropdown-item" href="<?=base_url?>user/logOut">Cerrar Sesion</a></li>

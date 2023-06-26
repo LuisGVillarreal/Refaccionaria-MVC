@@ -53,7 +53,7 @@ class log {
     }
 
     public function save(){
-        $sql = "INSERT INTO logs VALUES (NULL, {$this->getUserId()}, NULL)";
+        $sql = "INSERT INTO logs VALUES (NULL, {$this->getUserId()}, NOW())";
         $save = $this->db->query($sql);
 
         $result = false;
