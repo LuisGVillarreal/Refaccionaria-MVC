@@ -54,7 +54,7 @@
 				<td><?=$u->edad;?></td>
 				<td><?=$u->genero;?></td>
 				<td><?=$u->email;?></td>
-				<td><img src="<?=base_url?>/uploads/users/<?=$u->img;?>" height="60"></td>
+				<td><img src="<?=base_url?>uploads/users/<?=$u->img;?>" height="60"></td>
 				<td>
 					<div class="btn-group">
 						<a class="btn btn-warning" href="<?=base_url?>user/edit&id=<?=$u->id?>">
