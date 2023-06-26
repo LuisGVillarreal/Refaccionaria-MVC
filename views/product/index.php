@@ -9,9 +9,14 @@
         <img src="<?=base_url?>/assets/images/autopartes1.jpg" height="100%">
         <div class="container">
           <div class="carousel-caption text-start ps-3 bg-black-transparent text-white">
-            <h1>Registrate hoy.</h1>
-            <p>Registrate para obtener nuestros mejores productos.</p>
-            <p><a class="btn btn-lg btn-primary" href="<?=base_url?>user/signUp">Registrarse</a></p>
+          <?php if(isset($_SESSION['identity'])):?>
+            <h1>¡Bienvenido de nuevo!</h1>
+            <p>Explora nuestra selección premium de productos y aprovecha nuestras ofertas personalizadas.</p>
+          <?php else:?>
+              <h1>Registrate hoy.</h1>
+              <p>Registrate para obtener nuestros mejores productos.</p>
+              <p><a class="btn btn-lg btn-primary" href="<?=base_url?>user/signUp">Registrarse</a></p>
+          <?php endif;?>
           </div>
         </div>
       </div>
