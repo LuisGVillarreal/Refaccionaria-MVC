@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta lang="es">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="<?=base_url?>assets/images/logo.ico">
 	<link rel="stylesheet" type="text/css" href="<?=base_url?>assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="<?=base_url?>assets/css/main.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
