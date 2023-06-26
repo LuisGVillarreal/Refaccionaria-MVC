@@ -29,7 +29,7 @@
 				<th>Imagen</th>
 				<th>Nombre</th>
 				<th>Cantidad</th>
-				<th>Subtotal</th>
+				<th>Total</th>
 			</thead>
 			<tbody>
 			<?php while($p = $products->fetch_object()): ?>
