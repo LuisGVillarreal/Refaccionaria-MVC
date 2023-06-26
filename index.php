@@ -12,7 +12,7 @@ function showError(){
 }
 
 if (isset($_GET['controller'])) {
-	$nombre_controlador = $_GET['controller'].'controller';
+	$nombre_controlador = $_GET['controller'].'Controller';
 } elseif (!isset($_GET['controller']) && !isset($_GET['action'])) {
 	$nombre_controlador = controller_default;
 }
