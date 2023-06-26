@@ -150,7 +150,7 @@ class user {
 
 
     public function save(){
-    	$sql = "INSERT INTO users VALUES (NULL, '{$this->getNombre()}','{$this->getPaterno()}','{$this->getMaterno()}',{$this->getEdad()},{$this->getSexo()},'{$this->getEmail()}','{$this->getPassword()}',NULL,1,'{$this->getImg()}')";
+    	$sql = "INSERT INTO users VALUES (NULL, '{$this->getNombre()}','{$this->getPaterno()}','{$this->getMaterno()}',{$this->getEdad()},{$this->getSexo()},'{$this->getEmail()}','{$this->getPassword()}',NOW(),1,'{$this->getImg()}')";
     	$save = $this->db->query($sql);
 
     	$result = false;
