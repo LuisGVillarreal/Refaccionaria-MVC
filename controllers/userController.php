@@ -97,7 +97,8 @@ class userController {
 
 	public function delete(){
 		utils::isAdmin();
-		if(isset($_GET['id'])){
+		$idIdentity = $_SESSION['identity']->id;
+		if(isset($_GET['id']) && ($idIdentity != $_GET['id'])){
 			$id = $_GET['id'];	
 			$user = new user();
 			$user->setId($id);
