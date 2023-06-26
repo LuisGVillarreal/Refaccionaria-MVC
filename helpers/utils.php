@@ -84,7 +84,7 @@ class utils{
 		return $hidden;
 	}
 
-	public function getStock($product_id){
+	public static function getStock($product_id){
 		require_once 'models/product.php';
 		$product = new product();
 		$product->setId($product_id);
