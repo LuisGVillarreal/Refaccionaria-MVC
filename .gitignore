@@ -9,5 +9,3 @@ composer.json
 #Carpeta imagen
 /uploads/
 
-#Configuracion appache
-.htaccess
